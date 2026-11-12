@@ -1,0 +1,25 @@
+# secrets
+.env
+.env.*
+!.env.example
+# deps / builds
+node_modules/
+.next/
+.langgraph_api/
+dist/
+# recordings and scratch (clips go to Loom, not git)
+*.webm
+*.mp4
+autorecorder/videos/
+clips-staging/
+staging/
+logs/
+*.log
+# recorder run output
+runs/
+# never commit keys
+*.env
+*.env.txt
+
+# generated after install by autorecorder/scripts/write-versions.mjs
+my-copilot-app/VERSIONS.md
